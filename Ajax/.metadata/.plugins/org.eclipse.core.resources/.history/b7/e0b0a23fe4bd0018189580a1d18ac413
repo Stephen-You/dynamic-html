@@ -1,0 +1,7 @@
+package cn.ajax_basic.get;
+
+import javax.servlet.http.HttpServlet;
+
+public class BServlet extends HttpServlet {
+
+}

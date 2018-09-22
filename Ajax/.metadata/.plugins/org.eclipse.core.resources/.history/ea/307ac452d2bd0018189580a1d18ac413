@@ -1,0 +1,17 @@
+package cn.ajax_basic.post;
+
+import javax.servlet.http.HttpServlet;
+/**
+ * 
+ * @author Yorick
+ * 2018年9月22日
+ * theme:进行Ajax的基础笔记总结所做简单练习--Ajax_post请求
+ */
+public class APostServlet extends HttpServlet {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+}

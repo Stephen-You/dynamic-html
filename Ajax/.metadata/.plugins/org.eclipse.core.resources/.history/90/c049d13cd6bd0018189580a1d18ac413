@@ -1,0 +1,20 @@
+package cn.ajax_basic.post;
+
+import javax.servlet.http.HttpServlet;
+/**
+ * 
+ * @author Yorick
+ * 2018年9月22日
+ * theme:用户注册用户名异步验证
+ */
+public class ValidateUsernameServlet extends HttpServlet {
+
+	/*
+	 * 1. 获取参数username
+	 * 2. 判断是否为itcast
+	 *   3. 如果是：响应1
+	 *   4. 如果不是：响应0
+	 */
+	private static final long serialVersionUID = 1L;
+
+}

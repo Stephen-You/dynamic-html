@@ -1,0 +1,12 @@
+package cn.ajax_basic.get;
+
+import javax.servlet.http.HttpServlet;
+/**
+ * 
+ * @author Yorick
+ * 2018年9月22日
+ * theme:服务器响应text/xml
+ */
+public class BServlet extends HttpServlet {
+
+}

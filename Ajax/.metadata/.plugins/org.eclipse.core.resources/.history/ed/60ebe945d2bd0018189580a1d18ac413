@@ -1,0 +1,7 @@
+package cn.ajax_basic.post;
+
+import javax.servlet.http.HttpServlet;
+
+public class APostServlet extends HttpServlet {
+
+}

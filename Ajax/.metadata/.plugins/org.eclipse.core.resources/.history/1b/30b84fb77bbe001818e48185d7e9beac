@@ -1,0 +1,17 @@
+package cn.ajax_basic.get;
+
+import javax.servlet.http.HttpServlet;
+/**
+ * 
+ * @author Yorick
+ * 2018年9月22日
+ * theme:简易版股票交易所
+ */
+public class PriceServlet extends HttpServlet {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+}
