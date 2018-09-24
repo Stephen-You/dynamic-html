@@ -1,0 +1,59 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>xml与json数据传输与解析</title>
+<script type="text/javascript" src="/ajax-lib/ajaxutils.js"></script>
+<script type="text/javascript">
+var name;
+var age;
+var sex;
+function xml() {
+	//alert("xml");
+	ajax({"url":"<c:url value='/XMLServlet'/>",
+			"type":"xml",
+			"method":"POST",
+			"params":"name = xml",
+			"callback":function(data){
+				alert("callback");
+				//处理浏览器的差异--window.addEventListener为true说明不是IE
+				if(window.addEventListener){
+					name = data.getElementsByTagName("name")[0].textContent;//其它浏览器
+				}else{
+					name = data.getElementsByTagName("name")[0].text;//IE浏览器
+				}
+				if(window.addEventListener){
+					age = data.getElementsByTagName("age")[0].textContent;
+				}else{
+					age = data.getElementsByTagName("age")[0].text;
+				}
+				if(window.addEventListener){
+					sex = data.getElementsByTagName("sex")[0].textContent;
+				}else {
+					sex = data.getElementsByTagName("sex")[0].text;
+				}
+				var text = name + ", " + age + ", " + sex;
+				document.getElementById("xml").innerHTML = text;
+			}
+	});
+}
+
+/* function json() {
+	
+} */
+window.onload = function () {
+	//alert("body");
+	document.getElementById("xml").onclick = xml;
+	//id1.onclick = xml;
+	//id2.ondblclick = json;
+	
+}
+</script>
+</head>
+<body>
+<h1 id="xml">xml</h1>
+<h1 id="json">json</h1>
+</body>
+</html>

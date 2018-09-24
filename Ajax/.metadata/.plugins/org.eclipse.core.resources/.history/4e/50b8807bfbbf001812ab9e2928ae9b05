@@ -1,0 +1,23 @@
+package cn.ajax_basic.json.objectToJSON;
+/**
+ * 
+ * @author Yorick
+ * 2018年9月24日
+ * theme:对象和JSON字符串之间的转变练习--JSONArray
+ */
+
+import org.junit.Test;
+
+import net.sf.json.JSONArray;
+
+public class JSONTest {
+	@Test
+	public void objectJson() {
+		JSONArray ja = new JSONArray();
+		Person p1 = new Person("Yorick1", 26, "male");
+		Person p2 = new Person("Yorick2", 27, "female");
+		ja.add(p1);
+		ja.add(p2);
+		System.out.println(ja.toString());
+	}
+}

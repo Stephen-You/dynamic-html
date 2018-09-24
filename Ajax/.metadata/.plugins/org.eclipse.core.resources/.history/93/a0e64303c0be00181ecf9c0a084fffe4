@@ -1,0 +1,49 @@
+package cn.ajax_basic.get;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.Element;
+import org.dom4j.Node;
+import org.dom4j.io.SAXReader;
+/**
+ * 
+ * @author Yorick
+ * 2018年9月23日
+ * theme:获取省份名称,返回该省份所述的城市名称,返回格式为xml
+ */
+public class CityServlet extends HttpServlet {
+
+	private static final long serialVersionUID = 1L;
+	@Override
+	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		//设置请求编码
+		req.setCharacterEncoding("utf-8");
+		// 注意，这里内容类型必须是text/xml，不然客户端得到的就不是xml文档对象，而是字符串了
+		resp.setContentType("text/xml;charset=utf-8");
+		String provinceName = req.getParameter("pname");//获取省份名称
+		System.out.println(provinceName);
+		try {
+			InputStream input = this.getClass().getResourceAsStream("src/china.xml");
+			SAXReader reader = new SAXReader();
+			Document document = reader.read(input);
+			Element root = document.getRootElement();
+			System.out.println(root);
+			// 查询指定省份名称的<province>元素
+			Node node =  document.selectSingleNode("//province[@name='" + provinceName + "']");
+			System.out.println(node);
+			String xml = node.asXML();
+			// 把元素转换成字符串发送给客户端
+			resp.getWriter().print(xml);
+		} catch (DocumentException e) {
+			throw new RuntimeException();
+		}
+	}
+}

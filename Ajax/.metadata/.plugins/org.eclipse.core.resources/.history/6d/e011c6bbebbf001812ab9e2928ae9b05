@@ -1,0 +1,12 @@
+package cn.ajax_basic.json;
+
+import javax.servlet.http.HttpServlet;
+/**
+ * 
+ * @author Yorick
+ * 2018年9月24日
+ * theme:对比XML和JSON传输及js解析
+ */
+public class XMLServlet extends HttpServlet {
+
+}

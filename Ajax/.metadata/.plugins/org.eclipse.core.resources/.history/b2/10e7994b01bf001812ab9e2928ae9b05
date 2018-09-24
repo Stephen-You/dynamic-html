@@ -1,0 +1,26 @@
+package cn.ajax_basic.xstream;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class XStreamTest {
+	//返回javabean集合
+	public List<Province> getProvinceList(){
+		Province p1 = new Province();
+		p1.setName("北京");
+		p1.addCity(new City("东城区", "DongChengQu"));
+		p1.addCity(new City("昌平区", "ChangPingQu"));
+		
+		Province p2 = new Province();
+		p2.setName("辽宁");
+		p2.addCity(new City("沈阳", "shenYang"));
+		p2.addCity(new City("葫芦岛", "huLuDao"));
+		
+		//创建集合存放JavaBean对象
+		List<Province> list = new ArrayList<>();
+		list.add(p1);
+		list.add(p2);
+		
+		return list;
+	}
+}

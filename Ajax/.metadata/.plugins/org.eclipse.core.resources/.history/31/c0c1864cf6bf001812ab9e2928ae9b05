@@ -1,0 +1,22 @@
+package cn.ajax_basic.json.objectToJSON;
+
+import org.junit.Test;
+
+import net.sf.json.JSONObject;
+/**
+ * 
+ * @author Yorick
+ * 2018年9月24日
+ * theme:对象和JSON字符串之间的转变练习
+ */
+public class JSONDemo {
+
+	@Test
+	public void testJSONObject() {
+		JSONObject jo = new JSONObject();
+		jo.put("name", "Yorick");
+		jo.put("age", 18);
+		jo.put("sex", "male");
+		System.out.println(jo.toString());
+	}
+}

@@ -1,0 +1,17 @@
+package cn.ajax_basic.json;
+
+import javax.servlet.http.HttpServlet;
+/**
+ * 
+ * @author Yorick
+ * 2018年9月25日
+ * theme:发送json字符串集js解析
+ */
+public class JSONServlet extends HttpServlet {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+}

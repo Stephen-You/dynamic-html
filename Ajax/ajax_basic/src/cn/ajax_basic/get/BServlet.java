@@ -23,6 +23,7 @@ public class BServlet extends HttpServlet {
 					"<sex>male</sex>" +
 					"</student>" +
 					"</students>";
+		System.out.println(req.getParameter("name"));
 		resp.getWriter().print(xml);
 	}
 }

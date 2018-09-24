@@ -1,0 +1,27 @@
+package cn.ajax_basic.get;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+/**
+ * 
+ * @author Yorick
+ * 2018年9月23日
+ * theme:省市联动
+ */
+public class ProvinceServlet extends HttpServlet {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		//设置响应类型和编码格式
+	}
+
+}

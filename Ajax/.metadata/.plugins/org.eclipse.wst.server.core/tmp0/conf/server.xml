@@ -126,7 +126,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="D:\WorkSpace\dynamic-html\Ajax\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\WorkSpace\dynamic-html\Ajax\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ajax_basic" path="/ajax_basic" reloadable="true" source="org.eclipse.jst.jee.server:ajax_basic"/></Host>
+      <Context docBase="D:\WorkSpace\dynamic-html\Ajax\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\WorkSpace\dynamic-html\Ajax\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ajax_basic" path="/ajax_basic" reloadable="true" source="org.eclipse.jst.jee.server:ajax_basic"/><Context docBase="D:\WorkSpace\dynamic-html\Ajax\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day23_1" path="/day23_1" reloadable="true" source="org.eclipse.jst.jee.server:day23_1"/></Host>
     </Engine>
   </Service>
 </Server>

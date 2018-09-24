@@ -1,2 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="org.dom4j.Attribute"/>
+<fullyQualifiedTypeName name="org.dom4j.io.SAXReader"/>
+<fullyQualifiedTypeName name="org.dom4j.Document"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="org.dom4j.Node"/>
+<fullyQualifiedTypeName name="org.dom4j.Element"/>
+<fullyQualifiedTypeName name="com.sun.javafx.scene.paint.GradientUtils.Point"/>
+<fullyQualifiedTypeName name="com.thoughtworks.xstream.XStream"/>
+<fullyQualifiedTypeName name="cn.ajax_basic.xstream.Province"/>
+<fullyQualifiedTypeName name="cn.ajax_basic.xstream.City"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="net.sf.json.xml.XMLSerializer"/>
+<fullyQualifiedTypeName name="net.sf.json.JSONObject"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="cn.ajax_basic.json.objectToJSON.Person"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="net.sf.json.JSONArray"/>
+</qualifiedTypeNameHistroy>

@@ -25,6 +25,22 @@
   	<servlet-name>PriceServlet</servlet-name>
   	<url-pattern>/PriceServlet</url-pattern>
   </servlet-mapping>
+      <servlet>
+  	<servlet-name>XMLServlet</servlet-name>
+  	<servlet-class>cn.ajax_basic.json.XMLServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>XMLServlet</servlet-name>
+  	<url-pattern>/XMLServlet</url-pattern>
+  </servlet-mapping>
+      <servlet>
+  	<servlet-name>JSONServlet</servlet-name>
+  	<servlet-class>cn.ajax_basic.json.JSONServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>JSONServlet</servlet-name>
+  	<url-pattern>/JSONServlet</url-pattern>
+  </servlet-mapping>
   <servlet>
     <servlet-name>ValidateUsernameServlet</servlet-name>
     <servlet-class>cn.ajax_basic.post.ValidateUsernameServlet</servlet-class>
@@ -35,11 +51,11 @@
   </servlet>
   <servlet>
     <servlet-name>ProvinceServlet</servlet-name>
-    <servlet-class>cn.itcast.web.servlet.ProvinceServlet</servlet-class>
+    <servlet-class>cn.ajax_basic.get.ProvinceServlet</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>CityServlet</servlet-name>
-    <servlet-class>cn.itcast.web.servlet.CityServlet</servlet-class>
+    <servlet-class>cn.ajax_basic.get.CityServlet</servlet-class>
   </servlet>
 
 

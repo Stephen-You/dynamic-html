@@ -1,0 +1,16 @@
+package cn.ajax_basic.json.objectToJSON;
+
+import org.junit.Test;
+/**
+ * 
+ * @author Yorick
+ * 2018年9月24日
+ * theme:对象和JSON字符串之间的转变练习
+ */
+public class JSONDemo {
+
+	@Test
+	public void testJSONObject() {
+		
+	}
+}

@@ -1,0 +1,12 @@
+package cn.ajax_basic.get;
+
+import javax.servlet.http.HttpServlet;
+/**
+ * 
+ * @author Yorick
+ * 2018年9月23日
+ * theme:省市联动
+ */
+public class ProvinceServlet extends HttpServlet {
+
+}
